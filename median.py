@@ -9,7 +9,6 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-if(len(numbers)%2==1):
-    print(numbers[len(numbers)/2+1])
-else:
-    print((numbers[len(numbers)/2]+numbers[len(numbers)/2+1])/2)
+numbers.sort()
+middle =  len(numbers) // 2
+print(numbers[middle]+numbers[~middle]/2)
